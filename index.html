@@ -5,11 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon shortcut" type="image/png" href="/portfolio/favicon.107cc816.png" />
-    <title>
-      [Tilak Sharma] | Machine Learning | Deep Learning | Software Engineering |
-    </title>
-    <meta name="keywords" content="[username], [name], skill" />
-    <meta name="description" content="[Tilak Sharma] | Developer" />
+    <title>Tilak Sharma | Machine Learning Research &amp; Engineering</title>
+    <meta name="keywords" content="Tilak Sharma, machine learning, research, FluidZero, privacy preserving ML, reinforcement learning" />
+    <meta name="description" content="Tilak Sharma: machine learning engineer and researcher, cofounder of FluidZero AI." />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -46,6 +44,27 @@
         font-size: 1.5em;
         display: inline-block;
       }
+      #current-work {
+        color: #272341;
+        background-color: #fff;
+        padding-top: 5rem;
+      }
+      #current-work .project-wrapper__text {
+        text-align: left;
+        margin-bottom: 4rem;
+      }
+      #current-work .project-wrapper__text-title {
+        margin-bottom: 1.2rem;
+        font-size: 2.2rem;
+        font-weight: 700;
+      }
+      #current-work .project-wrapper__text p {
+        font-size: 1.7rem;
+      }
+      .scholar-link {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+      }
       .publication-list a {
         color: #00f;
         font-size: 1em;
@@ -61,7 +80,7 @@
           Hello, I'm <span class="text-color-main">Tilak Sharma.</span>
         </h1>
         <h2 class="hero-subtitle">
-          Machine Learning | Deep Learning | Research | Software Development
+          Machine Learning | Research | Cofounder, FluidZero AI
         </h2>
       </div>
     </section>
@@ -83,17 +102,21 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info-text">
               <p>
-                I specialize in Artificial Intelligence and Machine Learning,
-                with a background in Computer Science and Engineering. I hold a
-                Master's degree in Engineering Sciences with a focus on AI and
-                Robotics, and my research work encompasses
-                <b
-                  >Machine Learning, Computer Vision, Image Processing,
-                  Audio/Digital Signal Processing, and Audio/Music Tech Machine
-                  Learning</b
-                >. My technical skills include
-                <b>Python, Java, Kotlin, and C++</b>, and I'm experienced with
-                <b>PyTorch</b> and <b>TensorFlow</b> frameworks. <br />
+                I'm a machine learning engineer and researcher. I cofounded
+                <b>FluidZero AI</b>, where I own the extraction and ML stack for
+                document intelligence in construction, and I work as an
+                <b>AI Engineer at Everest Insurance &amp; Reinsurance</b>,
+                leading an initiative that builds agents over reinsurance
+                contracts. <br />
+                <br />
+                My published research is mostly on
+                <b>privacy preserving machine learning with fully homomorphic
+                encryption</b>, with collaborators at IBM Research and Michigan
+                State. I hold a Master's in Engineering Sciences (AI &amp;
+                Robotics) from the University at Buffalo. Lately I'm most
+                interested in grounding: getting models to reason and cite
+                reliably, and to abstain when the evidence is weak, especially
+                as AI moves into the physical world. <br />
                 <br />
                 <b>Hobbies:</b> You can catch me jamming on the guitar or
                 exploring adrenaline-fueled activities.
@@ -113,44 +136,116 @@
         </div>
       </div>
     </section>
+    <section id="current-work">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="dark-blue-text section-title">Current Work</h2>
+          <div class="row">
+            <div class="col-12">
+              <div class="load-hidden project-wrapper__text">
+                <h3 class="project-wrapper__text-title">
+                  FluidZero AI (Cofounder)
+                </h3>
+                <p class="mb-4">
+                  Document intelligence for construction and compliance. I own
+                  the extraction and ML stack: parsing drawings and specs
+                  (DocLayout-YOLO, RT-DETR, PaddleOCR), multi vector and hybrid
+                  retrieval (ColPali/MUVERA, BM25, RRF fusion), and a Neo4j
+                  knowledge graph that agents query to reason across documents.
+                  Paying pilot with a road construction firm; 2nd place at
+                  Antler AI Builders Day.
+                </p>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://fluidzero.ai"
+                >
+                  fluidzero.ai
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://fluidzero.ai/research/kg-vs-markdown-benchmark"
+                >
+                  Knowledge graph vs. markdown benchmark
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="load-hidden project-wrapper__text">
+                <h3 class="project-wrapper__text-title">
+                  fluidfield: site walk verification against BIM
+                </h3>
+                <p class="mb-4">
+                  An iOS capture app records ARKit poses, LiDAR depth, RoomPlan
+                  geometry, and the world map from a construction site walk. A
+                  pipeline registers each walk to the building model and to
+                  earlier walks (floor height match, FFT search over the floor
+                  plan, trimmed ICP). Every expected element gets a verdict of
+                  <b>seen present</b>, <b>seen absent</b>, or <b>not seen</b>, so
+                  the system abstains instead of guessing when its evidence is
+                  weak.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="load-hidden project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Egress Review Gym</h3>
+                <p class="mb-4">
+                  An RL environment and a dataset of construction drawings with
+                  planted egress violations, built to train a small vision model
+                  to review code compliance. Early runs didn't learn; I'm
+                  working through why, and how violations should be planted.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="publications">
       <div class="container">
         <div class="publications-wrapper">
           <h2 class="dark-blue-text section-title">Publications / Research</h2>
+          <p class="scholar-link">
+            Full list on
+            <a
+              href="https://scholar.google.com/citations?user=fOE46NMAAAAJ&amp;hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="color: #00f; text-decoration: underline"
+              >Google Scholar</a
+            >
+          </p>
           <ul class="publication-list">
             <li>
-              FHE Operators for Score and Decision Fusion in Biometric
-              Identification <strong>[Published]</strong> |
-              <a
-                href="https://ieeexplore.ieee.org/document/10374571"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <u><span style="color: #00f">IEEE</span></u>
-              </a>
+              PixMus: Video and Text Conditioned Background Music Generation Using Latent Diffusion <strong>[IEEE CAI 2025 (Master's thesis)]</strong>
             </li>
             <li>
-              Smart Hydroponics integrating IoT and Machine Learning
-              <strong>[Published]</strong> |
-              <a
-                href="https://ieeexplore.ieee.org/document/9315549"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <u><span style="color: #00f">IEEE</span></u>
-              </a>
+              Confidential and Protected Disease Classifier Using Fully Homomorphic Encryption <strong>[IEEE CAI 2024]</strong>
             </li>
             <li>
-              Confidential and Protected Disease Classifier using FHE
-              <strong>[Accepted]</strong>
+              Privacy-Preserving Ensemble Learning Using Fully Homomorphic Encryption <strong>[ICPR 2024]</strong>
             </li>
             <li>
-              Privacy-Preserving Ensemble Learning using FHE
-              <strong>[In Review]</strong>
+              Secure Sleep Apnea Detection with FHE and Deep Learning on ECG Signals <strong>[ICPR 2024]</strong>
             </li>
             <li>
-              Secure Sleep Apnea Detection with FHE and Deep Learning on ECG
-              Signals <strong>[In Review]</strong>
+              Privacy-Enhanced Graph Edge Convolutional Networks <strong>[IEEE WNYISPW 2024]</strong>
+            </li>
+            <li>
+              Fully Homomorphic Encryption Operators for Score and Decision Fusion in Biometric Identification <strong>[IEEE WIFS 2023]</strong> |
+              <a href="https://ieeexplore.ieee.org/document/10374571" target="_blank" rel="noopener noreferrer">IEEE</a>
+            </li>
+            <li>
+              Smart Hydroponics System Integrating with IoT and Machine Learning Algorithm <strong>[RTEICT 2020 (as H. K. Srinidhi)]</strong> |
+              <a href="https://ieeexplore.ieee.org/document/9315549" target="_blank" rel="noopener noreferrer">IEEE</a>
             </li>
           </ul>
         </div>
@@ -159,7 +254,7 @@
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
-          <h2 class="dark-blue-text section-title">Projects</h2>
+          <h2 class="dark-blue-text section-title">Earlier Projects</h2>
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="load-hidden project-wrapper__text">
@@ -509,7 +604,7 @@
         <div class="social-links">
           <a
             rel="noreferrer"
-            href="mailto:tilaksharma1114@example.com"
+            href="mailto:tilaksharma1114@gmail.com"
             target="_blank"
           >
             <i class="fa fa-envelope fa-inverse"></i>
